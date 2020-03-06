@@ -1,26 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import Membre from './components/Membre'
+class App extends Component{
+render () {  
+  const  {titre1} = this.props
+  // const  {titre2} = this.props
+  // const  {titre3} = this.props
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h1>{titre1}</h1>
+     <Membre nom ='Ismaila'/>     
+     <Membre nom ='Gaye'/>     
+     <Membre nom ='Astan'/>     
+     <Membre nom ='Bintou'/>     
+     <Membre nom ='Sandy'>     
+     je suis
+     </Membre>
     </div>
-  );
+  )
+  
 }
+}
+
+
+
+
 
 export default App;

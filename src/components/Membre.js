@@ -1,10 +1,10 @@
 import React, {Fragment} from 'react'
 
-const Membre = ({nom, children}) => {
+const Membre = ({nom, age, children}) => {
 
     return  (
     <frames>
-        <h1>Membres de Ma famille sont: {nom} </h1>    
+        <h1>{nom} : {age}</h1> 
         <p>{children}</p>
         </frames>
         )

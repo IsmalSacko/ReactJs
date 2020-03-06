@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App titre1='Mon App React1' titre2='Mon App React2' titre3='Mon App React3'/>, document.getElementById('rendu'));
+ReactDOM.render(<App titre='Mon App React'/>, document.getElementById('rendu'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
